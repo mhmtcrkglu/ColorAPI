@@ -1,4 +1,7 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using Colors.API.Models.Demo;
+using Colors.API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,6 +16,13 @@ namespace Colors.API.Controllers
     [Route("api/[controller]")]
     public class DemoController : ControllerBase
     {
+        private readonly IInstagramService _instagramService;
+
+        public DemoController(IInstagramService instagramService)
+        {
+            _instagramService = instagramService;
+        }
+
         [HttpGet("names")]
         [ProducesResponseType(typeof(List<string>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -22,6 +32,15 @@ namespace Colors.API.Controllers
             response.Add("Mustafa Türkan");
             response.Add("Mehmet Çürükoğlu");
             return Ok(response);
+        }
+        
+        [HttpGet("user-info")]
+        [ProducesResponseType(typeof(GetUserInfoModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<List<string>>> GetUserInfo([FromBody] GetUserInfoModel model)
+        {
+            var result = await _instagramService.GetUserInfo(model.AccessToken);
+            return Ok(result);
         }
     }
 }
