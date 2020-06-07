@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Reflection;
+using Colors.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +24,9 @@ namespace Colors.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddScoped<IInstagramService, InstagramService>();
+            services.AddHttpClient();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo

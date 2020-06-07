@@ -27,7 +27,6 @@ namespace Colors.API.Services
             var formattedUrl = string.Format(baseUrl, accessToken);
 
             var result = await _httpClientFactory.CreateClient().GetAsync(formattedUrl);
-            result.EnsureSuccessStatusCode();
             var responseAsString = await result.Content.ReadAsStringAsync();
             
             return JsonConvert.DeserializeObject<GetUserInfoModel>(responseAsString);

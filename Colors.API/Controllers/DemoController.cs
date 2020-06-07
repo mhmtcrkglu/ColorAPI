@@ -33,13 +33,13 @@ namespace Colors.API.Controllers
             response.Add("Mehmet Çürükoğlu");
             return Ok(response);
         }
-        
+
         [HttpGet("user-info")]
         [ProducesResponseType(typeof(GetUserInfoModel), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<List<string>>> GetUserInfo([FromBody] GetUserInfoModel model)
+        public async Task<ActionResult<GetUserInfoModel>> GetUserInfo([FromQuery] string accessToken)
         {
-            var result = await _instagramService.GetUserInfo(model.AccessToken);
+            var result = await _instagramService.GetUserInfo(accessToken);
             return Ok(result);
         }
     }
