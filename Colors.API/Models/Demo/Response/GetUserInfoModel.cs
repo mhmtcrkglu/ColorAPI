@@ -18,5 +18,10 @@ namespace Colors.API.Models.Demo.Response
 
         [JsonProperty("media_count")]
         public long MediaCount { get; set; }
+
+        public long FollowersCount { get; set; }
+        
+        public long FollowingCount { get; set; }
+
     }
 }
