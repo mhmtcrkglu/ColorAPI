@@ -24,7 +24,7 @@ namespace Colors.API.Services
         {
             var userInfoUrl = baseUrl + "me?fields=id,username&access_token={0}";
             
-            var formattedUrl = string.Format(baseUrl, accessToken);
+            var formattedUrl = string.Format(userInfoUrl, accessToken);
 
             var result = await _httpClientFactory.CreateClient().GetAsync(formattedUrl);
             var responseAsString = await result.Content.ReadAsStringAsync();

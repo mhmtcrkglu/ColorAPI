@@ -42,5 +42,7 @@ namespace Colors.API.Controllers
             var result = await _instagramService.GetUserInfo(accessToken);
             return Ok(result);
         }
+        
+        
     }
 }
