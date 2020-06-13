@@ -22,7 +22,7 @@ namespace Colors.API.Services
 
         public async Task<GetUserInfoModel> GetUserInfo(string accessToken)
         {
-            var userInfoUrl = baseUrl + "me?fields=id,username&access_token={0}";
+            var userInfoUrl = baseUrl + "me?fields=id,ig_id,username,account_type,media_count&access_token={0}";
             
             var formattedUrl = string.Format(userInfoUrl, accessToken);
 

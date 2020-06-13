@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a7241985-89ba-413e-ab47-9c720e65624f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Colors/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colors.API/Colors.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Colors.API/Colors.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colors.API/Controllers/DemoController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Colors.API/Controllers/DemoController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colors.API/Controllers/FilesController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colors.API/Controllers/StudentsController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colors.API/Controllers/TodosController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colors.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Colors.API/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Colors.UnitTests/obj/Debug/netcoreapp3.1/Colors.UnitTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Colors.UnitTests/obj/Debug/netcoreapp3.1/Colors.UnitTests.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +88,16 @@
       <option name="presentableId" value="Default" />
       <updated>1591905917411</updated>
       <workItem from="1591905918924" duration="335000" />
+      <workItem from="1592055293891" duration="328000" />
     </task>
+    <task id="LOCAL-00001" summary="url fix">
+      <created>1592055396693</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592055396693</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +117,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="url fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="url fix" />
   </component>
   <component name="WindowStateProjectService">
     <state width="1750" height="391" key="GridCell.Tab.0.bottom" timestamp="1592055356059">
@@ -217,10 +223,10 @@
     </state>
     <state width="1750" height="391" key="GridCell.Tab.4.right/0.0.1792.1120@0.0.1792.1120" timestamp="1592055356065" />
     <state width="1750" height="391" key="GridCell.Tab.4.right/0.23.1792.1020@0.23.1792.1020" timestamp="1591564045682" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1591564161562">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1592055400018">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1591564161562" />
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1592055400018" />
     <state x="679" y="484" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591563294304">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
