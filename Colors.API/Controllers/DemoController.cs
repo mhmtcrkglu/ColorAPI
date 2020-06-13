@@ -1,9 +1,10 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Colors.API.Models.Demo;
+using Colors.API.Models.Demo.Response;
 using Colors.API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using GetUserInfoModel = Colors.API.Models.Demo.GetUserInfoModel;
 
 namespace Colors.API.Controllers
 {
@@ -42,7 +43,15 @@ namespace Colors.API.Controllers
             var result = await _instagramService.GetUserInfo(accessToken);
             return Ok(result);
         }
-        
+       
+        [HttpGet("user-media")]
+        [ProducesResponseType(typeof(GetUserMediaModel), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<GetUserMediaModel>> GetUserMedia([FromQuery] string accessToken)
+        {
+            var result = await _instagramService.GetUserMedia(accessToken);
+            return Ok(result);
+        }
         
     }
 }
